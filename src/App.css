@@ -1,38 +1,61 @@
-.App {
-  text-align: center;
+:root {
+  --color-background-default: #f4f6f8;
+  --color-arrow-default: #f4f6f8;
+  --color-background-selected: #343a40;
+  --color-arrow-selected: #253cf2;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html,
+body {
+  height: 100%;
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.mr-10 {
+  margin-right: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.upvote-default {
+  background-color: var(--color-background-default);
+  color: var(--color-arrow-default);
+}
+
+.upvote-selected {
+  background-color: var(--color-background-selected);
+  color: var(--color-arrow-selected);
+}
+
+/* .list-row {
   display: flex;
-  flex-direction: column;
+  padding: 10px;
+  min-width: 600px;
+  border: 1px solid var(--color-background-selected);
+}
+
+.upvotes-row {
+  display: flex;
+} */
+
+.btn-add {
+  cursor: pointer;
+}
+
+.list-row {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 500px;
+  border: 1px solid var(--color-background-selected);
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.upvotes-container {
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-container {
+  display: flex;
 }
