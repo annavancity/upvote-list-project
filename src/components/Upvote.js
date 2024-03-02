@@ -1,11 +1,16 @@
-import arrowUp from "../images/arrow-up.svg";
+import React from "react";
 
 const Upvote = ({ isSelected, onClick }) => {
   const className = isSelected ? "upvote-selected" : "upvote-default";
 
   return (
-    <div className={`${className} mr-10`} onClick={onClick}>
-      <img src={arrowUp} alt="arrow-up" />
+    <div
+      className={`${className} mr-10 arrow-container`}
+      onClick={onClick}
+      role="button"
+      tabIndex={0}
+    >
+      <p className="arrow">&#8593;</p>
     </div>
   );
 };

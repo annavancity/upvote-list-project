@@ -1,7 +1,7 @@
 :root {
   --color-background-default: #f4f6f8;
-  --color-arrow-default: #f4f6f8;
-  --color-background-selected: #343a40;
+  --color-arrow-default: #343a40;
+  --color-background-selected: #e5e8fd;
   --color-arrow-selected: #253cf2;
 }
 
@@ -14,27 +14,35 @@ body {
 .mr-10 {
   margin-right: 10px;
 }
+.arrow {
+  font-size: 15px;
+  padding: 0 15px;
+}
+
+.arrow-container {
+  cursor: pointer;
+  border-radius: 5px;
+}
 
 .upvote-default {
   background-color: var(--color-background-default);
   color: var(--color-arrow-default);
+  border: 1px solid var(--color-arrow-default);
 }
 
 .upvote-selected {
   background-color: var(--color-background-selected);
   color: var(--color-arrow-selected);
+  border: 1px solid var(--color-arrow-selected);
 }
 
-/* .list-row {
-  display: flex;
-  padding: 10px;
-  min-width: 600px;
-  border: 1px solid var(--color-background-selected);
+.arrow-default {
+  fill: var(--color-arrow-default);
 }
 
-.upvotes-row {
-  display: flex;
-} */
+.arrow-selected {
+  fill: var(--color-arrow-selected);
+}
 
 .btn-add {
   cursor: pointer;
